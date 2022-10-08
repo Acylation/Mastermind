@@ -79,10 +79,11 @@ void Generator::Export()
 
 }
 
-void Generator::GetVec()
+vector<int> Generator::GetVec()
 {
     return m_sequence;
 }
+
 
 
 
