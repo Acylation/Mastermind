@@ -2,7 +2,9 @@
 /.vscode
 /.vs
 /Debug
+/Test
 /x64
+/Old
 
 # Prerequisites
 *.d

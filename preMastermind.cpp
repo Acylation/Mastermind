@@ -8,12 +8,13 @@
 using namespace std;
 using namespace std;
 
-static default_random_engine e(time(0));
+
 //必须加static，Ref: https://blog.csdn.net/CSDNwei/article/details/113865349
 
 //Universal Functions
 inline int RandInt(int start, int end)//仿 Casio 991CNX
 {
+    static default_random_engine e(time(0));
     static uniform_int_distribution<int> uniInt(start, end);
     Sleep(1000); // windows.h 库函数
     return uniInt(e);
